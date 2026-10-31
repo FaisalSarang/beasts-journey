@@ -16,7 +16,7 @@ import com.workoutlog.app.ui.HomeScreen
 import com.workoutlog.app.ui.ProgressScreen
 import com.workoutlog.app.ui.Screen
 import com.workoutlog.app.ui.SessionScreen
-import com.workoutlog.app.ui.theme.WorkoutLogTheme
+import com.workoutlog.app.ui.theme.BeastsJourneyTheme
 
 class MainActivity : ComponentActivity() {
     private val vm: AppViewModel by viewModels()
@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            WorkoutLogTheme { App(vm) }
+            BeastsJourneyTheme { App(vm) }
         }
     }
 
